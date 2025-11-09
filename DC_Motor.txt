@@ -1,0 +1,13 @@
+#DC_Motor
+nt motorpin = 9;
+
+void setup() {
+  pinMode(motorpin, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(motorpin, HIGH);
+  delay(100);
+  digitalWrite(motorpin, LOW);
+  delay(100);
+}

@@ -1,0 +1,41 @@
+#RGB_LED
+void setup() {
+    pinMode(13, OUTPUT);
+    pinMode(12, OUTPUT);
+    pinMode(11, OUTPUT);
+}
+
+void loop() {
+    setColor(255, 0, 0);
+    delay(1000);
+    setColor(0, 255, 0);
+    delay(1000);
+    setColor(0, 0, 255);
+    delay(1000);
+}
+
+void setColor(int redval, int greenval, int blueval) {
+    analogWrite(13, redval);
+    analogWrite(12, greenval);
+    analogWrite(11, blueval);
+}
+
+#LED
+void setup()
+{
+  pinMode(13, OUTPUT);
+  pinMode(12, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(13, HIGH);
+  delay(50);
+  digitalWrite(13, LOW);
+  delay(100);
+
+  digitalWrite(12, HIGH);
+  delay(100);
+  digitalWrite(12, LOW);
+  delay(50);
+}
